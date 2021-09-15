@@ -13,6 +13,7 @@ from rest_framework.response import Response
 from django.contrib.auth import authenticate
 
 # in case of APIs we don't have to worry about csrf token hence we exempt csrf
+# commented because not working properly
 """@csrf_exempt
 def signup(request):
     if request.method == 'POST':
